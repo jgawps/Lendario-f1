@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Corrida 3D</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Import Map para carregar o Three.js e o GLTFLoader diretamente via CDN -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div id="ui">
+        <h2>Corrida 3D</h2>
+        <p>Controles: Setas / WASD</p>
+    </div>
+
+    <!-- Script principal como Módulo JS -->
+    <script type="module" src="corrida.js"></script>
+</body>
+</html>
